@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <title>Move Activities</title>
+</head>
+
+<body>
+  <h1>Add Activity</h1>
+  <form id="create-form">
+    <div class="form-group">
+      <div class="columns">
+        <div class="column">
+          <h2>Name</h2>
+          <input class="input is-focused" type="text" placeholder="Full Name" id="name">
+    <button type="submit" class="button is-focused">Submit</button>
+  </form>
+        </div>
+        <div class="column is-2 desktop is one-fifth widescreen">
+          <h2>Excercise</h2>
+          <div class="select">
+            <select class="is-focused" id="bodypart">
+              <option value="legs">Legs</option>
+              <option value="arms">Arms</option>
+              <option value="chest">Chest</option>
+              <option value="cardio">Cardio</option>
+            </select>
+          </div>
+        </div>
+        <div class="column" id="unit-column"> <label for="unit">Units</label>
+          <input class="input is-focused" type="text" placeholder="Miles or Pounds" id="unit"></div>
+        <div class="column" id = "reps-column"> <label for="reps">Reps</label>
+          <input class="input is-focused" type="text" placeholder="Lifts or Laps" id="reps"></div>
+      </div>
+    </div>
+    </div>
+  </form>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
